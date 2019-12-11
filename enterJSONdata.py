@@ -1,5 +1,5 @@
 import json
-
+from pprint import pprint
 # Input
 flightDate = input("Date of flight (yyyy-mm-dd): ")
 flightNumber = input("Flight Number: ")
@@ -16,28 +16,28 @@ passengers = input("Comma Separated list of passengers: ")
 # TODO
 
 # Create JSON
-output = []
-flight_log = {}
-aircraft = {}
-passengers_list = []
-flight_log['date'] = flightDate
-flight_log['flightNumber'] = flightNumber
-flight_log['simulation'] = simulation
-flight_log['notes'] = notes
-aircraft['id'] = aircraftID
-aircraft['make'] = aircraftMake
-aircraft['model'] = aircraftModel
-flight_log['aircraft'] = aircraft
-flight_log['origin'] = origin
-flight_log['destination'] = destination
-flight_log['pilots'] = pilot
-for passenger in passengers.split(','):
-    passengers_list.append(passenger)
-flight_log['passengers'] = passengers_list
+with open('data.json') as f:
+    logs = json.load(f)
+    flight_log = {}
+    flight_log['date'] = flightDate
+    flight_log['flightNumber'] = flightNumber
+    flight_log['simulation'] = simulation
+    flight_log['notes'] = notes
+    aircraft = {}
+    aircraft['id'] = aircraftID
+    aircraft['make'] = aircraftMake
+    aircraft['model'] = aircraftModel
+    flight_log['aircraft'] = aircraft
+    flight_log['origin'] = origin
+    flight_log['destination'] = destination
+    flight_log['pilots'] = pilot
+    passengers_list = []
+    for passenger in passengers.split(','):
+        passengers_list.append(passenger)
+    flight_log['passengers'] = passengers_list
 
-output.append(flight_log)
+logs.append(flight_log)
+pprint(logs)
 
-print(json.dumps(flight_log, indent=4))
-
-with open('data.json', 'a+') as outfile:
-    json.dump(output, outfile)
+with open('data.json', 'w') as outfile:
+    json.dump(logs, outfile, indent=4)
