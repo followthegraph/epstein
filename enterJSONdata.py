@@ -16,7 +16,7 @@ passengers = input("Comma Separated list of passengers: ")
 # TODO
 
 # Create JSON
-with open('data.json') as f:
+with open('flight_log.json') as f:
     logs = json.load(f)
     flight_log = {}
     flight_log['date'] = flightDate
@@ -39,5 +39,5 @@ with open('data.json') as f:
 logs.append(flight_log)
 pprint(logs)
 
-with open('data.json', 'w') as outfile:
+with open('flight_log', 'w') as outfile:
     json.dump(logs, outfile, indent=4)
