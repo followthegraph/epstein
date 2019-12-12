@@ -196,5 +196,20 @@
     "origin": "HPN",
     "date": "2001-01-25",
     "notes": ""
+  },
+  {
+    "aircraft": {
+      "model": "727-31",
+      "make": "Boeing",
+      "id": "N908JE"
+    },
+    "destination": "TIST",
+    "pilots": "David Rodgers",
+    "notes": "",
+    "passengers": ["JG", "GM", "AP", "SK", "Ed Tuttle", "1 Male", "1 Female"],
+    "simulation": false,
+    "flightNumber": "53",
+    "date": "2002-01-27",
+    "origin": "PBI"
   }
 ]
