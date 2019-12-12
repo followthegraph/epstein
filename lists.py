@@ -20,10 +20,11 @@ aircraftIDs = ['Simulation',
                'Other']
 
 aircraftMakes = ['Gulfstream',
-                 'Boeing']
+                 'Boeing',
+                 'Other']
 
 aircraftModels = ['727-200', '727-31', '727-31H',
-                  '1159B', '421B', '206-L3', 'BHT-407']
+                  '1159B', '421B', '206-L3', 'BHT-407', 'Other']
 
 origs_dests = ['ABY',
                'ABQ',

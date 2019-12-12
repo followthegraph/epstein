@@ -57,7 +57,6 @@ def enterFlightLog(logs):
     for i, id in enumerate(aircraftIDs):
         pprint(str(i) + ' - ' + str(id))
     aircraftID_choice = input("Aircraft ID: ")
-    pprint(len(aircraftIDs))
     if int(aircraftID_choice)+1 == len(aircraftIDs):
         aircraftID = input("Aircraft ID (Other): ")
     else:
@@ -68,18 +67,43 @@ def enterFlightLog(logs):
     for i, id in enumerate(aircraftMakes):
         pprint(str(i) + ' - ' + str(id))
     aircraftMake_choice = input("Aircraft Make: ")
-    aircraftMake = aircraftMakes[int(aircraftMake_choice)]
+    if int(aircraftMake_choice)+1 == len(aircraftMakes):
+        aircraftMake = input("Aircraft Make (Other): ")
+    else:
+        aircraftMake = aircraftMakes[int(aircraftMake_choice)]
 
     pprint("|-------------------------------------------------------------|")
     pprint("Aircraft Model:")
     for i, id in enumerate(aircraftModels):
         pprint(str(i) + ' - ' + str(id))
     aircraftModel_choice = input("Aircraft Model: ")
-    aircraftModel = aircraftModels[int(aircraftModel_choice)]
+    if int(aircraftModel_choice)+1 == len(aircraftModels):
+        aircraftModel = input("Aircraft Model (Other): ")
+    else:
+        aircraftModel = aircraftModels[int(aircraftModel_choice)]
 
-    origin = input("Origin: ")
-    destination = input("Destination: ")
+    pprint("|-------------------------------------------------------------|")
+    pprint("Origin:")
+    for i, id in enumerate(origs_dests):
+        pprint(str(i) + ' - ' + str(id))
+    origin_choice = input("Origin: ")
+    if int(origin_choice)+1 == len(origs_dests):
+        origin = input("Origin (Other): ")
+    else:
+        origin = origs_dests[int(origin_choice)]
+
+    pprint("|-------------------------------------------------------------|")
+    pprint("Destination:")
+    for i, id in enumerate(origs_dests):
+        pprint(str(i) + ' - ' + str(id))
+    destination_choice = input("destination: ")
+    if int(destination_choice)+1 == len(origs_dests):
+        destination = input("Destination (Other): ")
+    else:
+        destination = origs_dests[int(destination_choice)]
+
     pilot = input("Pilot: ")
+
     passengers = input("Comma Separated list of passengers: ")
     # Validation
     # TODO
