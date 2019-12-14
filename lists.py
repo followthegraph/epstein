@@ -1,3 +1,5 @@
+# TODO: Change these to functions that assemble based on unique values already input (once enough entered (at least for passengers))
+
 aircraftIDs = ['Simulation',
                'N908JE',
                'N909JE',
@@ -99,3 +101,5 @@ origs_dests = ['ABY',
                'ZBAA',
                'ZGSZ',
                'Other']
+
+neo4j_import_dir = r"C:\Users\Tundra\.Neo4jDesktop\neo4jDatabases\database-8f33f594-a792-462c-8692-44868aa82820\installation-3.5.6\import"

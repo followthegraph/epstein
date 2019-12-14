@@ -1,13 +1,17 @@
 import json
 from pprint import pprint
-from lists import aircraftIDs, aircraftMakes, aircraftModels, origs_dests
-# TODO: alphabetize lists
+from shutil import copyfile
+from colorama import init, Fore, Style
+from prettytable import PrettyTable
+from lists import aircraftIDs, aircraftMakes, aircraftModels, origs_dests, neo4j_import_dir
+# TODO: alphabetize lists (just use sort)
 
 
 def main():
     with open('flight_log.json') as f:
         logs = json.load(f)
     enterFlightLog(logs)
+    copyfile('flight_log.json', neo4j_import_dir+'\\flight_log.json')
 
 
 def enterFlightLog(logs):
@@ -104,7 +108,27 @@ def enterFlightLog(logs):
 
     pilot = input("Pilot: ")
 
-    passengers = input("Comma Separated list of passengers: ")
+    passengers = []
+    while True:
+        # TODO: ability to edit awaiting passengers
+        passengerList = sectionTable("Passengers", """       Choose the number corresponding to the passenger
+                 OR enter a new passenger"
+               Type x to indicate no more passengers """, 'passengers', flight_logs)
+        passenger = input("Passenger (" + str(passengers) + "): ")
+
+        if passenger.isnumeric() and int(passenger) < len(passengerList):
+            passengers.append(passengerList[int(passenger)])
+            continue
+        elif len(passenger) > 0 and passenger not in passengerList and passenger != 'x':
+            passengers.append(passenger)
+            continue
+        elif len(passenger) == 0:
+            warningMSG = Fore.RED + 'must be at least one passenger' + Style.RESET_ALL
+            print(warningMSG)
+            continue
+        else:
+            break
+
     # Validation
     # TODO
 
@@ -124,11 +148,7 @@ def enterFlightLog(logs):
     flight_log['origin'] = origin
     flight_log['destination'] = destination
     flight_log['pilots'] = "David Rodgers" if pilot == "" else pilot
-    passengers_list = []
-    # will need to trim the passenger
-    for passenger in passengers.split(','):
-        passengers_list.append(passenger)
-    flight_log['passengers'] = passengers_list
+    flight_log['passengers'] = passengers
 
     logs.append(flight_log)
     pprint(logs)
@@ -137,6 +157,41 @@ def enterFlightLog(logs):
         json.dump(logs, outfile, indent=4)
 
     enterFlightLog(logs)
+
+
+def sectionTable(header, instructions, sectionKey, logs):
+    print("|-------------------------------------------------------------|")
+    print("    " + header)
+    print("|-------------------------------------------------------------|")
+    print(Fore.RED + instructions + Style.RESET_ALL)
+    print("|-------------------------------------------------------------|")
+    optionList = getUniqueValuesForKey(logs, sectionKey)
+    optionList.sort()
+    line = []
+    tbl = PrettyTable(header=False, hrules=True,
+                      horizontal_char='_', junction_char='/')
+    for i in range(len(optionList)):
+        line.append('[' + str(i) + '] - ' + optionList[i])
+        if len(line) % 5 == 0:
+            tbl.add_row(line)
+            line = []
+    tbl.align = "l"
+    print(tbl)
+    return optionList
+
+
+def getUniqueValuesForKey(jsonData, searchKey):
+    # return a list of unique values for a given key in a json variable
+    values = set()
+    if searchKey != 'passengers':
+        for item in jsonData:
+            values.add(item[searchKey])
+    else:
+        for item in jsonData:
+            for passenger in item[searchKey]:
+                values.add(passenger)
+
+    return list(values)
 
 
 if __name__ == "__main__":
