@@ -1,3 +1,5 @@
 data.json
 jsontests.py
 cypher
+flight_log_*
+flight_log.csv
