@@ -18,15 +18,13 @@ aircraftIDs = ['Simulation',
                'N75RR',
                'N778ME',
                'N4424E',
-               'N307BG',
-               'Other']
+               'N307BG']
 
 aircraftMakes = ['Gulfstream',
-                 'Boeing',
-                 'Other']
+                 'Boeing']
 
 aircraftModels = ['727-200', '727-31', '727-31H',
-                  '1159B', '421B', '206-L3', 'BHT-407', 'Other']
+                  '1159B', '421B', '206-L3', 'BHT-407']
 
 origs_dests = ['ABY',
                'ABQ',
@@ -99,7 +97,6 @@ origs_dests = ['ABY',
                'WSSS',
                'WTBD',
                'ZBAA',
-               'ZGSZ',
-               'Other']
+               'ZGSZ']
 
 neo4j_import_dir = r"C:\Users\Tundra\.Neo4jDesktop\neo4jDatabases\database-8f33f594-a792-462c-8692-44868aa82820\installation-3.5.6\import"

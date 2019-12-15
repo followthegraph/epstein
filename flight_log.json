@@ -1,215 +1,274 @@
 [
-  {
-    "date": "2001-01-06",
-    "flightNumber": 44,
-    "simulation": false,
-    "notes": "",
-    "aircraft": {
-      "id": "N908JE",
-      "make": "Boeing",
-      "model": "727-31"
+    {
+        "flightNumber": 44,
+        "simulation": false,
+        "destination": "EWR",
+        "passengers": [
+            "Jeffrey Epstein",
+            "Ghislaine Maxwell",
+            "Sarah Kellen",
+            "AP",
+            "Alexia Wallert",
+            "Cindy Lopez"
+        ],
+        "origin": "TIST",
+        "aircraft": {
+            "model": "727-31",
+            "id": "N908JE",
+            "make": "Boeing"
+        },
+        "pilot": "David Rogers",
+        "notes": "",
+        "date": "2001-01-06"
     },
-    "origin": "TIST",
-    "destination": "EWR",
-    "pilot": "David Rogers",
-    "passengers": [
-      "Jeffrey Epstein",
-      "Ghislaine Maxwell",
-      "Sarah Kellen",
-      "AP",
-      "Alexia Wallert",
-      "Cindy Lopez"
-    ]
-  },
-  {
-    "date": "2001-01-11",
-    "flightNumber": 45,
-    "simulation": false,
-    "notes": "",
-    "aircraft": {
-      "id": "N908JE",
-      "make": "Boeing",
-      "model": "727-31"
+    {
+        "flightNumber": 45,
+        "simulation": false,
+        "destination": "PBI",
+        "passengers": [
+            "Jeffrey Epstein",
+            "Ghislaine Maxwell",
+            "Roger",
+            "Warren",
+            "Margaret",
+            "1 Female"
+        ],
+        "origin": "EWR",
+        "aircraft": {
+            "model": "727-31",
+            "id": "N908JE",
+            "make": "Boeing"
+        },
+        "pilot": "David Rogers",
+        "notes": "",
+        "date": "2001-01-11"
     },
-    "origin": "EWR",
-    "destination": "PBI",
-    "pilot": "David Rogers",
-    "passengers": [
-      "Jeffrey Epstein",
-      "Ghislaine Maxwell",
-      "Roger",
-      "Warren",
-      "Margaret",
-      "1 Female"
-    ]
-  },
-  {
-    "date": "2001-01-13",
-    "flightNumber": 1557,
-    "simulation": false,
-    "notes": "",
-    "aircraft": {
-      "id": "N909JE",
-      "make": "Gulfstream",
-      "model": "1159B"
+    {
+        "flightNumber": 1557,
+        "simulation": false,
+        "destination": "MBPV",
+        "passengers": [
+            "Jeffrey Epstein",
+            "Ghislaine Maxwell"
+        ],
+        "origin": "PBI",
+        "aircraft": {
+            "model": "1159B",
+            "id": "N909JE",
+            "make": "Gulfstream"
+        },
+        "pilot": "David Rogers",
+        "notes": "",
+        "date": "2001-01-13"
     },
-    "origin": "PBI",
-    "destination": "MBPV",
-    "pilot": "David Rogers",
-    "passengers": ["Jeffrey Epstein", "Ghislaine Maxwell"]
-  },
-  {
-    "date": "2001-01-13",
-    "flightNumber": 1558,
-    "simulation": false,
-    "notes": "",
-    "aircraft": {
-      "id": "N909JE",
-      "make": "Gulfstream",
-      "model": "1159B"
+    {
+        "flightNumber": 1558,
+        "simulation": false,
+        "destination": "PBI",
+        "passengers": [
+            "Jeffrey Epstein",
+            "Ghislaine Maxwell"
+        ],
+        "origin": "MBPV",
+        "aircraft": {
+            "model": "1159B",
+            "id": "N909JE",
+            "make": "Gulfstream"
+        },
+        "pilot": "David Rogers",
+        "notes": "",
+        "date": "2001-01-13"
     },
-    "origin": "MBPV",
-    "destination": "PBI",
-    "pilot": "David Rogers",
-    "passengers": ["Jeffrey Epstein", "Ghislaine Maxwell"]
-  },
-  {
-    "date": "2001-01-14",
-    "flightNumber": 46,
-    "simulation": false,
-    "notes": "",
-    "aircraft": {
-      "id": "N908JE",
-      "make": "Boeing",
-      "model": "727-31"
+    {
+        "flightNumber": 46,
+        "simulation": false,
+        "destination": "LGA",
+        "passengers": [
+            "Jeffrey Epstein",
+            "Ghislaine Maxwell"
+        ],
+        "origin": "PBI",
+        "aircraft": {
+            "model": "727-31",
+            "id": "N908JE",
+            "make": "Boeing"
+        },
+        "pilot": "David Rogers",
+        "notes": "",
+        "date": "2001-01-14"
     },
-    "origin": "PBI",
-    "destination": "LGA",
-    "pilot": "David Rogers",
-    "passengers": ["Jeffrey Epstein", "Ghislaine Maxwell"]
-  },
-  {
-    "aircraft": {
-      "id": "N908JE",
-      "model": "727-31",
-      "make": "Boeing"
+    {
+        "flightNumber": "47",
+        "passengers": [
+            "JE"
+        ],
+        "simulation": "false",
+        "destination": "BED",
+        "pilots": "David Rodgers",
+        "origin": "LGA",
+        "aircraft": {
+            "make": "Boeing",
+            "model": "727-31",
+            "id": "N908JE"
+        },
+        "notes": "",
+        "date": "2002-01-15"
     },
-    "simulation": "false",
-    "flightNumber": "47",
-    "date": "2002-01-15",
-    "notes": "",
-    "destination": "BED",
-    "origin": "LGA",
-    "passengers": ["JE"],
-    "pilots": "David Rodgers"
-  },
-  {
-    "aircraft": {
-      "id": "N908JE",
-      "model": "727-31",
-      "make": "Boeing"
+    {
+        "flightNumber": "48",
+        "passengers": [
+            "JE",
+            "Jessica"
+        ],
+        "simulation": "false",
+        "destination": "HPN",
+        "pilots": "David Rodgers",
+        "origin": "BED",
+        "aircraft": {
+            "make": "Boeing",
+            "model": "727-31",
+            "id": "N908JE"
+        },
+        "notes": "",
+        "date": "2002-01-15"
     },
-    "simulation": "false",
-    "flightNumber": "48",
-    "date": "2002-01-15",
-    "notes": "",
-    "destination": "HPN",
-    "origin": "BED",
-    "passengers": ["JE", "Jessica"],
-    "pilots": "David Rodgers"
-  },
-  {
-    "aircraft": {
-      "id": "N908JE",
-      "model": "727-31",
-      "make": "Boeing"
+    {
+        "flightNumber": "49",
+        "passengers": [
+            "JE",
+            "GN",
+            "SK",
+            "AP",
+            "Cindy Lopez",
+            "Joanne",
+            "1 Female"
+        ],
+        "simulation": "false",
+        "destination": "TIST",
+        "pilots": "David Rodgers",
+        "origin": "HPN",
+        "aircraft": {
+            "make": "Boeing",
+            "model": "727-31",
+            "id": "N908JE"
+        },
+        "notes": "",
+        "date": "2002-01-17"
     },
-    "simulation": "false",
-    "flightNumber": "49",
-    "date": "2002-01-17",
-    "notes": "",
-    "destination": "TIST",
-    "origin": "HPN",
-    "passengers": ["JE", "GN", "SK", "AP", "Cindy Lopez", "Joanne", "1 Female"],
-    "pilots": "David Rodgers"
-  },
-  {
-    "aircraft": {
-      "id": "N908JE",
-      "model": "727-31",
-      "make": "Boeing"
+    {
+        "flightNumber": "50",
+        "passengers": [
+            "JE",
+            "GM",
+            "SK",
+            "AP",
+            "Cindy Lopez",
+            "Joanne",
+            "Mats Alexander",
+            "Kathy Alexander",
+            "Stacey Igglucksengh"
+        ],
+        "simulation": "false",
+        "destination": "PBI",
+        "pilots": "David Rodgers",
+        "origin": "TIST",
+        "aircraft": {
+            "make": "Boeing",
+            "model": "727-31",
+            "id": "N908JE"
+        },
+        "notes": "",
+        "date": "2002-01-20"
     },
-    "simulation": "false",
-    "flightNumber": "50",
-    "date": "2002-01-20",
-    "notes": "",
-    "destination": "PBI",
-    "origin": "TIST",
-    "passengers": [
-      "JE",
-      "GM",
-      "SK",
-      "AP",
-      "Cindy Lopez",
-      "Joanne",
-      "Mats Alexander",
-      "Kathy Alexander",
-      "Stacey Igglucksengh"
-    ],
-    "pilots": "David Rodgers"
-  },
-  {
-    "aircraft": {
-      "id": "N908JE",
-      "model": "727-31",
-      "make": "Boeing"
+    {
+        "flightNumber": "51",
+        "passengers": [
+            "JE",
+            "GM",
+            "SK",
+            "AP",
+            "Cindy Lopez",
+            "Joanne"
+        ],
+        "simulation": "false",
+        "destination": "HPN",
+        "pilots": "David Rodgers",
+        "origin": "PBI",
+        "aircraft": {
+            "make": "Boeing",
+            "model": "727-31",
+            "id": "N908JE"
+        },
+        "notes": "",
+        "date": "2001-01-22"
     },
-    "simulation": "false",
-    "flightNumber": "51",
-    "date": "2001-01-22",
-    "notes": "",
-    "destination": "HPN",
-    "origin": "PBI",
-    "passengers": ["JE", "GM", "SK", "AP", "Cindy Lopez", "Joanne"],
-    "pilots": "David Rodgers"
-  },
-  {
-    "aircraft": {
-      "id": "N908JE",
-      "model": "727-31",
-      "make": "Boeing"
+    {
+        "flightNumber": "52",
+        "simulation": "false",
+        "destination": "PBI",
+        "passengers": [
+            "JE",
+            "GM",
+            "SK",
+            "AP",
+            "Alberto Pinto",
+            "Yves Pickardt",
+            "Steve Sherman",
+            " 3 Females"
+        ],
+        "origin": "HPN",
+        "aircraft": {
+            "make": "Boeing",
+            "model": "727-31",
+            "id": "N908JE"
+        },
+        "pilots": "David Rodgers",
+        "notes": "",
+        "date": "2001-01-25"
     },
-    "passengers": [
-      "JE",
-      "GM",
-      "SK",
-      "AP",
-      "Alberto Pinto",
-      "Yves Pickardt",
-      "Steve Sherman",
-      " 3 Females"
-    ],
-    "flightNumber": "52",
-    "pilots": "David Rodgers",
-    "simulation": "false",
-    "destination": "PBI",
-    "origin": "HPN",
-    "date": "2001-01-25",
-    "notes": ""
-  },
-  {
-    "aircraft": {
-      "model": "727-31",
-      "make": "Boeing",
-      "id": "N908JE"
+    {
+        "flightNumber": "53",
+        "passengers": [
+            "JG",
+            "GM",
+            "AP",
+            "SK",
+            "Ed Tuttle",
+            "1 Male",
+            "1 Female"
+        ],
+        "simulation": false,
+        "destination": "TIST",
+        "pilots": "David Rodgers",
+        "origin": "PBI",
+        "aircraft": {
+            "make": "Boeing",
+            "model": "727-31",
+            "id": "N908JE"
+        },
+        "notes": "",
+        "date": "2002-01-27"
     },
-    "destination": "TIST",
-    "pilots": "David Rodgers",
-    "notes": "",
-    "passengers": ["JG", "GM", "AP", "SK", "Ed Tuttle", "1 Male", "1 Female"],
-    "simulation": false,
-    "flightNumber": "53",
-    "date": "2002-01-27",
-    "origin": "PBI"
-  }
+    {
+        "flightNumber": "54",
+        "passengers": [
+            "JE",
+            "GM",
+            "SK",
+            "Ed Tuttle",
+            "1 Male",
+            "1 Female"
+        ],
+        "simulation": false,
+        "destination": "TIST",
+        "pilots": "David Rodgers",
+        "origin": "PBI",
+        "aircraft": {
+            "model": "727-31",
+            "id": "N908JE",
+            "make": "Boeing"
+        },
+        "notes": "",
+        "date": "2002-01-27"
+    }
 ]
